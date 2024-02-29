@@ -6,10 +6,10 @@ def greetings(request):
     result={'message':'Greetings from cipher service'}
     return JsonResponse(result)
 
-def encode(request):
+def encode(request,plain_text,shift):
     print("nfdm,")
     parameters=dict(request.GET)
-    print("print params",parameters)
+    print("print params",parameters,plain_text,shift)
     cipher=ciphers_fun(plain_text,shift)
     return JsonResponse({'ciphered text':cipher})
     

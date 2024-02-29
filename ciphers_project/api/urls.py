@@ -5,5 +5,5 @@ from .views import greetings, encode
 
 urlpatterns = [
     path('',greetings),
-    path('cipher_func/<str:plain_text>/<int:shift>',encode)
+    path('cipherfunc/<str:plain_text>/<int:shift>',encode)
 ]

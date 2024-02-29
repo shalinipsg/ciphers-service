@@ -50,6 +50,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+# settings.py
+
+CORS_ORIGIN_ALLOW_ALL = True  # This allows all origins, not recommended for production
 
 ROOT_URLCONF = 'ciphers_project.urls'
 
