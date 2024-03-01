@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
-    'rest_framework'
+    'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,10 +50,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 # settings.py
 
-CORS_ORIGIN_ALLOW_ALL = True  # This allows all origins, not recommended for production
+# CORS_ORIGIN_ALLOW_ALL = True  # This allows all origins, not recommended for production
 
 ROOT_URLCONF = 'ciphers_project.urls'
 
@@ -72,6 +74,7 @@ TEMPLATES = [
     },
 ]
 
+CORS_ALLOWED_ORIGINS =["https://kundhana2123.github.io/","https://shalinipsg","http://localhost:3000"]
 WSGI_APPLICATION = 'ciphers_project.wsgi.application'
 
 
