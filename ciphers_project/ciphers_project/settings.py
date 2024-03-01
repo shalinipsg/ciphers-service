@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-CORS_ALLOWED_ORIGINS =["https://kundhana2123.github.io/","https://shalinipsg","http://localhost:3000"]
+CORS_ALLOWED_ORIGINS =["https://kundhana2123.github.io","https://shalinipsg.github.io","http://localhost:3000"]
 WSGI_APPLICATION = 'ciphers_project.wsgi.application'
 
 
